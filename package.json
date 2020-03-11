@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/williambrito98/node-examples/issues"
   },
-  "homepage": "https://github.com/williambrito98/node-examples#readme"
+  "homepage": "https://github.com/williambrito98/node-examples#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.0"
+  }
 }

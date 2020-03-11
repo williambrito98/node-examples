@@ -34,11 +34,43 @@ const fs = require('fs');
 //MOSTRA OS ARQUIVOS  QUE ESTÃO NA PASTA
 // async function print(path) {
 //     const dir = await fs.promises.opendir(path);
+//     console.log(dir.read());
 //     for await (const dirent of dir) {
-//         console.log(dirent.name);
+//        const x =  dirent.isDirectory();
+//        //console.log(x);
 //     }
 // }
 // print('./FileSystem').catch(console.error);
+
+//LE O CONTEUDO DE UM ARUIVO
+// fs.read('./', function(error,data){
+//     console.log(data);
+// })
+
+
+//MONITORA AS MEDIFICAÇÕES DE UM ARQUIVO
+// fs.watch('./index.js', {encoding: 'buffer'}, (eventType, filename) => {
+//     if(filename) {
+//         console.log(eventType);
+//     }
+// })
+
+
+// const http = require('http');
+
+// const hostname = '127.0.0.1';
+// const port = 3000;
+
+// const server = http.createServer( (req,res) => {
+//     res.statusCode = 200;
+//     res.setHeader('Content-Type', 'text/plain');
+//     res.end('Ola mundo');
+// });
+
+// server.listen(port, hostname, ()=> {
+//     console.log(`Server running as http://${hostname}:${port}`);
+// })
+
 
 
 
